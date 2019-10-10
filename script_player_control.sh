@@ -30,16 +30,16 @@ function execute_case(){
 
 }
 
+execute_case $1;
 
 
 
-
-if [[ -n $cmus_player_exist && -n $vlc_player_exist ]]; then 
-	echo "ambos os players estão rodando"
-elif  [[ -n $cmus_player_exist ]]; then
-	echo "só o cmus está rodando"
-elif [[ -n $vlc_player_exist ]]; then
-	echo "só o vlc está rodando"
-else
-	echo "ambos os players não estão em execução"
-fi
+# if [[ -n $cmus_player_exist && -n $vlc_player_exist ]]; then 
+# 	echo "ambos os players estão rodando"
+# elif  [[ -n $cmus_player_exist ]]; then
+# 	echo "só o cmus está rodando"
+# elif [[ -n $vlc_player_exist ]]; then
+# 	echo "só o vlc está rodando"
+# else
+# 	echo "ambos os players não estão em execução"
+# fi
